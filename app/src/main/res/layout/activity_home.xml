@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".HomeAct">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Faizal Alwan"
+            android:textColor="@color/colorBlack"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinslight"
+            android:text="IDR 100.000"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:srcCompat="@drawable/ic_wallet" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profilepict" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Categories"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <ImageView
+                            android:id="@+id/imageAppetizer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_appetizer" />
+
+                        <TextView
+                            android:id="@+id/textAppetizer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Appetizer"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textAppetizer_idn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="Makanan Pembuka"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/btn_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            app:srcCompat="@drawable/ic_next" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <ImageView
+                            android:id="@+id/btn_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_maincourse" />
+
+                        <TextView
+                            android:id="@+id/textMainCourse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Main Course"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textMainCourse_idn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="Makanan Utama"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/btn_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            app:srcCompat="@drawable/ic_next" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <ImageView
+                            android:id="@+id/imageDessert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_dessert" />
+
+                        <TextView
+                            android:id="@+id/textDessert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Dessert"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textDessert_idn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="Makanan Penutup"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/btn_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            app:srcCompat="@drawable/ic_next" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="22dp">
+
+                        <ImageView
+                            android:id="@+id/imageDrink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_drink" />
+
+                        <TextView
+                            android:id="@+id/textDrink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Drink"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textDrink_idn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppinslight"
+                            android:text="Minuman"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="10dp" />
+
+                        <ImageView
+                            android:id="@+id/btn_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            app:srcCompat="@drawable/ic_next" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Popular"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <!--Popular Menu-->
+        <androidx.cardview.widget.CardView
+                android:id="@+id/satecard"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/textPopular"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="@dimen/margin"
+                android:layout_marginEnd="@dimen/margin"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="22dp">
+
+                   <LinearLayout
+                       android:id="@+id/toptitle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:gravity="center"
+                       >
+                       <ImageView
+                           android:id="@+id/imageTop"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:srcCompat="@drawable/ic_top"
+                           android:layout_gravity="center"
+                          />
+
+                       <TextView
+                           android:id="@+id/textAppetizer"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="6dp"
+                           android:fontFamily="@font/poppinsmedium"
+                           android:text="Top of the Month"
+                           android:textColor="@color/colorBlack"
+                           android:textSize="14dp" />
+                   </LinearLayout>
+
+                    <TextView
+                        android:layout_below="@+id/toptitle"
+                        android:id="@+id/textSate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Te’Sate Madura"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp"
+                        android:layout_marginTop="12dp"/>
+                    <TextView
+                        android:layout_below="@id/textSate"
+                        android:id="@+id/textCateogry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinslight"
+                        android:text="Main Course"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="10dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_below="@id/textCateogry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_details"
+                            android:layout_width="84dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/bg_btnprimary"
+                            android:fontFamily="@font/poppinssemibold"
+                            android:text="Pesan"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="8sp"
+                            />
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="14dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="14dp"
+                            app:srcCompat="@drawable/ic_star"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/textPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="9.5"
+                            android:textColor="@color/colorBlack"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/tesate"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pisjocard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            app:layout_constraintTop_toBottomOf="@id/satecard"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:id="@+id/toptitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_top"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textAppetizer"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Top of the Week"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@+id/toptitle"
+                    android:id="@+id/textSate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Es Pisang Ijo"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_below="@id/textSate"
+                    android:id="@+id/textCateogry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Dessert"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@id/textCateogry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_details"
+                        android:layout_width="84dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/bg_btnprimary"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Pesan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="8sp"
+                        />
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="14dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_height="14dp"
+                        app:srcCompat="@drawable/ic_star"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="9.0"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/pisangijo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/igacard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/pisjocard"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="22dp">
+
+                <LinearLayout
+                    android:id="@+id/toptitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imageTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_top"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textAppetizer"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Top of the Day"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@+id/toptitle"
+                    android:id="@+id/textSate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:text="Iga K’bakar"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_below="@id/textSate"
+                    android:id="@+id/textCateogry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinslight"
+                    android:text="Main Course"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_below="@id/textCateogry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_details"
+                        android:layout_width="84dp"
+                        android:layout_height="28dp"
+                        android:background="@drawable/bg_btnprimary"
+                        android:fontFamily="@font/poppinssemibold"
+                        android:text="Pesan"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="8sp"
+                        />
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="14dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_height="14dp"
+                        app:srcCompat="@drawable/ic_star"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textPoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="8.5"
+                        android:textColor="@color/colorBlack"
+                        android:layout_gravity="center"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/igabakar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

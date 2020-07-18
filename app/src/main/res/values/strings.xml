@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TPMA2_10517041</string>
+    <string name="onBoarding1">Fresh Food</string>
+    <string name="onBoaring1val">Untuk mempertahankan cita rasa \n semua jajanan disajikan dalam \nkeadaan baru dimasak</string>
+    <string name="onBoarding2">Easy Payment</string>
+    <string name="onBoarding2val">Gunakan e-wallet untuk\nmembeli semua jajanan kaki lima\nagar menjadi lebih praktis</string>
+    <string name="onBoarding3">Fast Delivery</string>
+    <string name="onBoarding3val">Gerobak kami siap mengantarkan\npesanan dengan cepat dan selamat\nhingga ke alamat anda</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="nama">Nama</string>
+</resources>
